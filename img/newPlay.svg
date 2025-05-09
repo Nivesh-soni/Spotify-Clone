@@ -1,0 +1,9 @@
+ <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" role="img">
+                <!-- Green circle background -->
+                <circle cx="12" cy="12" r="11.75" fill="black" />
+
+                <!-- Black play triangle -->
+                <path
+                  d="M10.6804 8.1867L15.8192 10.9394C16.7269 11.4257 16.7269 12.5743 15.8192 13.0606L10.6804 15.8133C9.72723 16.3239 8.5 15.727 8.5 14.7527V9.24729C8.5 8.27305 9.72723 7.6761 10.6804 8.1867Z"
+                  fill="white" />
+              </svg>
