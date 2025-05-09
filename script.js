@@ -16,7 +16,7 @@ function formatTime(seconds) {
 
 async function getSongs(folder) {
     currfolder = folder;
-    let a = await fetch(`${folder}/`)
+    let a = await fetch(`http://127.0.0.1:5500/${folder}/`)
     let response = await a.text()
     // console.log(response)
     let div = document.createElement('div')
@@ -74,7 +74,7 @@ const playMusic = (track, pause = false) => {
 }
 
 async function main() {
-    await getSongs("song/Sonu nigam")
+    await getSongs("http://127.0.0.1:5500/song/Sonu nigam")
     // console.log(songs)
     playMusic(songs[0], true)
 
@@ -92,7 +92,7 @@ async function main() {
                 const e = array[i];
                 
             
-            if (e.href.includes("/song/")) {
+            if (e.href.includes("http://127.0.0.1:5500/song/")) {
                 let folder = e.href.split('/').slice(-2)[1]
 
                 //Get the meta data of the folder
